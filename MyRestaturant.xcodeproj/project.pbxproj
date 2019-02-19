@@ -8,13 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		C30ED68121FD267200F64C47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30ED68021FD267200F64C47 /* AppDelegate.swift */; };
-		C30ED68321FD267200F64C47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30ED68221FD267200F64C47 /* ViewController.swift */; };
+		C30ED68321FD267200F64C47 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30ED68221FD267200F64C47 /* MainVC.swift */; };
 		C30ED68621FD267200F64C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30ED68421FD267200F64C47 /* Main.storyboard */; };
 		C30ED68921FD267200F64C47 /* MyRestaturant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C30ED68721FD267200F64C47 /* MyRestaturant.xcdatamodeld */; };
 		C30ED68B21FD267400F64C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30ED68A21FD267400F64C47 /* Assets.xcassets */; };
 		C30ED68E21FD267400F64C47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30ED68C21FD267400F64C47 /* LaunchScreen.storyboard */; };
 		C30ED69921FD267400F64C47 /* MyRestaturantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30ED69821FD267400F64C47 /* MyRestaturantTests.swift */; };
 		C30ED6A421FD267500F64C47 /* MyRestaturantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30ED6A321FD267500F64C47 /* MyRestaturantUITests.swift */; };
+		C30ED6B621FF700200F64C47 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C30ED6B521FF700200F64C47 /* Default-568h@2x.png */; };
+		C30ED6BA21FF795E00F64C47 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30ED6B821FF795E00F64C47 /* SWRevealViewController.m */; };
+		C30ED6BC21FF9EE900F64C47 /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30ED6BB21FF9EE900F64C47 /* MainMenuVC.swift */; };
+		C30ED6BE21FFA57900F64C47 /* CellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30ED6BD21FFA57900F64C47 /* CellVC.swift */; };
+		C30ED6C021FFAE9B00F64C47 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30ED6BF21FFAE9B00F64C47 /* FirstVC.swift */; };
+		C3C81B052200EA2A0045E60F /* InventoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B042200EA2A0045E60F /* InventoryVC.swift */; };
+		C3C81B072200EB260045E60F /* RecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B062200EB260045E60F /* RecipeVC.swift */; };
+		C3C81B092200F8510045E60F /* MenuItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B082200F8510045E60F /* MenuItemVC.swift */; };
+		C3C81B0B2200FD040045E60F /* MeterialViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B0A2200FD040045E60F /* MeterialViews.swift */; };
+		C3C81B0D22010F2C0045E60F /* CollectionCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B0C22010F2C0045E60F /* CollectionCellVC.swift */; };
+		C3C81B0F22011EBB0045E60F /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B0E22011EBB0045E60F /* CalendarVars.swift */; };
+		C3C81B1122011F0A0045E60F /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B1022011F0A0045E60F /* DateCell.swift */; };
+		C3C81B1322011F540045E60F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B1222011F540045E60F /* ViewController.swift */; };
+		C3C81B15220127340045E60F /* DateSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B14220127340045E60F /* DateSelectVC.swift */; };
+		C3C81B17220134550045E60F /* SettingsTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B16220134550045E60F /* SettingsTableViewVC.swift */; };
+		C3C81B582204ECB20045E60F /* InventoryCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B572204ECB20045E60F /* InventoryCellVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +53,7 @@
 /* Begin PBXFileReference section */
 		C30ED67D21FD267200F64C47 /* MyRestaturant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRestaturant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30ED68021FD267200F64C47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C30ED68221FD267200F64C47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C30ED68221FD267200F64C47 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C30ED68521FD267200F64C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C30ED68821FD267200F64C47 /* MyRestaturant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyRestaturant.xcdatamodel; sourceTree = "<group>"; };
 		C30ED68A21FD267400F64C47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +65,24 @@
 		C30ED69F21FD267400F64C47 /* MyRestaturantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRestaturantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30ED6A321FD267500F64C47 /* MyRestaturantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRestaturantUITests.swift; sourceTree = "<group>"; };
 		C30ED6A521FD267500F64C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C30ED6B521FF700200F64C47 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C30ED6B721FF795D00F64C47 /* MyRestaturant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyRestaturant-Bridging-Header.h"; sourceTree = "<group>"; };
+		C30ED6B821FF795E00F64C47 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C30ED6B921FF795E00F64C47 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		C30ED6BB21FF9EE900F64C47 /* MainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
+		C30ED6BD21FFA57900F64C47 /* CellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellVC.swift; sourceTree = "<group>"; };
+		C30ED6BF21FFAE9B00F64C47 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		C3C81B042200EA2A0045E60F /* InventoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryVC.swift; sourceTree = "<group>"; };
+		C3C81B062200EB260045E60F /* RecipeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeVC.swift; sourceTree = "<group>"; };
+		C3C81B082200F8510045E60F /* MenuItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemVC.swift; sourceTree = "<group>"; };
+		C3C81B0A2200FD040045E60F /* MeterialViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterialViews.swift; sourceTree = "<group>"; };
+		C3C81B0C22010F2C0045E60F /* CollectionCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellVC.swift; sourceTree = "<group>"; };
+		C3C81B0E22011EBB0045E60F /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
+		C3C81B1022011F0A0045E60F /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		C3C81B1222011F540045E60F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3C81B14220127340045E60F /* DateSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectVC.swift; sourceTree = "<group>"; };
+		C3C81B16220134550045E60F /* SettingsTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewVC.swift; sourceTree = "<group>"; };
+		C3C81B572204ECB20045E60F /* InventoryCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCellVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +133,11 @@
 		C30ED67F21FD267200F64C47 /* MyRestaturant */ = {
 			isa = PBXGroup;
 			children = (
-				C30ED68021FD267200F64C47 /* AppDelegate.swift */,
-				C30ED68221FD267200F64C47 /* ViewController.swift */,
-				C30ED68421FD267200F64C47 /* Main.storyboard */,
+				C30ED6B321FD278800F64C47 /* Model */,
+				C30ED6B221FD277C00F64C47 /* View */,
+				C30ED6B121FD275500F64C47 /* Controllers */,
 				C30ED68A21FD267400F64C47 /* Assets.xcassets */,
-				C30ED68C21FD267400F64C47 /* LaunchScreen.storyboard */,
-				C30ED68F21FD267400F64C47 /* Info.plist */,
-				C30ED68721FD267200F64C47 /* MyRestaturant.xcdatamodeld */,
+				C30ED6B421FD27DB00F64C47 /* Supporting Files */,
 			);
 			path = MyRestaturant;
 			sourceTree = "<group>";
@@ -126,6 +158,58 @@
 				C30ED6A521FD267500F64C47 /* Info.plist */,
 			);
 			path = MyRestaturantUITests;
+			sourceTree = "<group>";
+		};
+		C30ED6B121FD275500F64C47 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C30ED68021FD267200F64C47 /* AppDelegate.swift */,
+				C30ED68221FD267200F64C47 /* MainVC.swift */,
+				C30ED6BB21FF9EE900F64C47 /* MainMenuVC.swift */,
+				C3C81B082200F8510045E60F /* MenuItemVC.swift */,
+				C3C81B062200EB260045E60F /* RecipeVC.swift */,
+				C3C81B042200EA2A0045E60F /* InventoryVC.swift */,
+				C3C81B572204ECB20045E60F /* InventoryCellVC.swift */,
+				C3C81B0C22010F2C0045E60F /* CollectionCellVC.swift */,
+				C3C81B1222011F540045E60F /* ViewController.swift */,
+				C30ED6BD21FFA57900F64C47 /* CellVC.swift */,
+				C3C81B1022011F0A0045E60F /* DateCell.swift */,
+				C30ED6BF21FFAE9B00F64C47 /* FirstVC.swift */,
+				C3C81B14220127340045E60F /* DateSelectVC.swift */,
+				C3C81B16220134550045E60F /* SettingsTableViewVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C30ED6B221FD277C00F64C47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3C81B0A2200FD040045E60F /* MeterialViews.swift */,
+				C30ED68421FD267200F64C47 /* Main.storyboard */,
+				C30ED68C21FD267400F64C47 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C30ED6B321FD278800F64C47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3C81B0E22011EBB0045E60F /* CalendarVars.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C30ED6B421FD27DB00F64C47 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C30ED6B921FF795E00F64C47 /* SWRevealViewController.h */,
+				C30ED6B821FF795E00F64C47 /* SWRevealViewController.m */,
+				C30ED6B521FF700200F64C47 /* Default-568h@2x.png */,
+				C30ED68F21FD267400F64C47 /* Info.plist */,
+				C30ED68721FD267200F64C47 /* MyRestaturant.xcdatamodeld */,
+				C30ED6B721FF795D00F64C47 /* MyRestaturant-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +280,7 @@
 				TargetAttributes = {
 					C30ED67C21FD267200F64C47 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					C30ED69321FD267400F64C47 = {
 						CreatedOnToolsVersion = 10.1;
@@ -233,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30ED68E21FD267400F64C47 /* LaunchScreen.storyboard in Resources */,
+				C30ED6B621FF700200F64C47 /* Default-568h@2x.png in Resources */,
 				C30ED68B21FD267400F64C47 /* Assets.xcassets in Resources */,
 				C30ED68621FD267200F64C47 /* Main.storyboard in Resources */,
 			);
@@ -259,9 +345,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C30ED68321FD267200F64C47 /* ViewController.swift in Sources */,
+				C3C81B1322011F540045E60F /* ViewController.swift in Sources */,
+				C3C81B072200EB260045E60F /* RecipeVC.swift in Sources */,
+				C30ED68321FD267200F64C47 /* MainVC.swift in Sources */,
+				C3C81B17220134550045E60F /* SettingsTableViewVC.swift in Sources */,
+				C30ED6BC21FF9EE900F64C47 /* MainMenuVC.swift in Sources */,
+				C3C81B15220127340045E60F /* DateSelectVC.swift in Sources */,
+				C3C81B0B2200FD040045E60F /* MeterialViews.swift in Sources */,
+				C3C81B582204ECB20045E60F /* InventoryCellVC.swift in Sources */,
+				C30ED6BE21FFA57900F64C47 /* CellVC.swift in Sources */,
+				C3C81B052200EA2A0045E60F /* InventoryVC.swift in Sources */,
+				C3C81B0D22010F2C0045E60F /* CollectionCellVC.swift in Sources */,
+				C30ED6C021FFAE9B00F64C47 /* FirstVC.swift in Sources */,
+				C3C81B092200F8510045E60F /* MenuItemVC.swift in Sources */,
+				C3C81B1122011F0A0045E60F /* DateCell.swift in Sources */,
+				C3C81B0F22011EBB0045E60F /* CalendarVars.swift in Sources */,
 				C30ED68921FD267200F64C47 /* MyRestaturant.xcdatamodeld in Sources */,
 				C30ED68121FD267200F64C47 /* AppDelegate.swift in Sources */,
+				C30ED6BA21FF795E00F64C47 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,15 +537,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TYAA352Y59;
-				INFOPLIST_FILE = MyRestaturant/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyRestaturant/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AnthonyBaldwin.MyRestaturant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyRestaturant/Supporting Files/MyRestaturant-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,15 +559,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TYAA352Y59;
-				INFOPLIST_FILE = MyRestaturant/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyRestaturant/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AnthonyBaldwin.MyRestaturant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyRestaturant/Supporting Files/MyRestaturant-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
