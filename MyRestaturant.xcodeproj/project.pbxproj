@@ -31,6 +31,8 @@
 		C3C81B15220127340045E60F /* DateSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B14220127340045E60F /* DateSelectVC.swift */; };
 		C3C81B17220134550045E60F /* SettingsTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B16220134550045E60F /* SettingsTableViewVC.swift */; };
 		C3C81B582204ECB20045E60F /* InventoryCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B572204ECB20045E60F /* InventoryCellVC.swift */; };
+		C3FA5B81221CA5A1008356AC /* RecipeCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FA5B80221CA5A1008356AC /* RecipeCellVC.swift */; };
+		C3FA5B83221CA5CA008356AC /* RecipeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FA5B82221CA5CA008356AC /* RecipeDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		C3C81B14220127340045E60F /* DateSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectVC.swift; sourceTree = "<group>"; };
 		C3C81B16220134550045E60F /* SettingsTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewVC.swift; sourceTree = "<group>"; };
 		C3C81B572204ECB20045E60F /* InventoryCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCellVC.swift; sourceTree = "<group>"; };
+		C3FA5B80221CA5A1008356AC /* RecipeCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCellVC.swift; sourceTree = "<group>"; };
+		C3FA5B82221CA5CA008356AC /* RecipeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,8 @@
 				C30ED6BB21FF9EE900F64C47 /* MainMenuVC.swift */,
 				C3C81B082200F8510045E60F /* MenuItemVC.swift */,
 				C3C81B062200EB260045E60F /* RecipeVC.swift */,
+				C3FA5B80221CA5A1008356AC /* RecipeCellVC.swift */,
+				C3FA5B82221CA5CA008356AC /* RecipeDetailVC.swift */,
 				C3C81B042200EA2A0045E60F /* InventoryVC.swift */,
 				C3C81B572204ECB20045E60F /* InventoryCellVC.swift */,
 				C3C81B0C22010F2C0045E60F /* CollectionCellVC.swift */,
@@ -348,6 +354,7 @@
 				C3C81B1322011F540045E60F /* ViewController.swift in Sources */,
 				C3C81B072200EB260045E60F /* RecipeVC.swift in Sources */,
 				C30ED68321FD267200F64C47 /* MainVC.swift in Sources */,
+				C3FA5B83221CA5CA008356AC /* RecipeDetailVC.swift in Sources */,
 				C3C81B17220134550045E60F /* SettingsTableViewVC.swift in Sources */,
 				C30ED6BC21FF9EE900F64C47 /* MainMenuVC.swift in Sources */,
 				C3C81B15220127340045E60F /* DateSelectVC.swift in Sources */,
@@ -361,6 +368,7 @@
 				C3C81B1122011F0A0045E60F /* DateCell.swift in Sources */,
 				C3C81B0F22011EBB0045E60F /* CalendarVars.swift in Sources */,
 				C30ED68921FD267200F64C47 /* MyRestaturant.xcdatamodeld in Sources */,
+				C3FA5B81221CA5A1008356AC /* RecipeCellVC.swift in Sources */,
 				C30ED68121FD267200F64C47 /* AppDelegate.swift in Sources */,
 				C30ED6BA21FF795E00F64C47 /* SWRevealViewController.m in Sources */,
 			);

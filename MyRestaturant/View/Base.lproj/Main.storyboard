@@ -423,11 +423,32 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drblur" translatesAutoresizingMaskIntoConstraints="NO" id="qsK-uc-ue9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sgP-6k-Tgw">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipeCell" rowHeight="100" id="262-VA-br3" customClass="RecipeCellVC" customModule="MyRestaturant" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="262-VA-br3" id="fIy-Ji-hRV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qKW-vg-sBA" kind="show" identifier="Update" id="cJ3-4e-CS6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="sgP-6k-Tgw" firstAttribute="bottom" secondItem="FF8-w0-LSD" secondAttribute="bottom" id="0ME-0H-0ZD"/>
                             <constraint firstItem="qsK-uc-ue9" firstAttribute="leading" secondItem="FF8-w0-LSD" secondAttribute="leading" id="1sk-L1-YtM"/>
                             <constraint firstItem="qsK-uc-ue9" firstAttribute="top" secondItem="G5I-Ne-gRK" secondAttribute="top" id="DtN-vG-u9c"/>
+                            <constraint firstItem="sgP-6k-Tgw" firstAttribute="leading" secondItem="FF8-w0-LSD" secondAttribute="leading" id="JuP-z1-nkZ"/>
+                            <constraint firstItem="sgP-6k-Tgw" firstAttribute="top" secondItem="FF8-w0-LSD" secondAttribute="top" id="LF3-JN-S5U"/>
+                            <constraint firstItem="sgP-6k-Tgw" firstAttribute="trailing" secondItem="FF8-w0-LSD" secondAttribute="trailing" id="WBv-IO-lkq"/>
                             <constraint firstItem="qsK-uc-ue9" firstAttribute="trailing" secondItem="FF8-w0-LSD" secondAttribute="trailing" id="gO8-Vj-dUN"/>
                             <constraint firstItem="qsK-uc-ue9" firstAttribute="bottom" secondItem="FF8-w0-LSD" secondAttribute="bottom" id="jTc-Se-2gv"/>
                         </constraints>
@@ -437,6 +458,12 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-menu" id="PRN-vR-ucQ">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7ax-Wd-vxC">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="qKW-vg-sBA" kind="show" identifier="add" id="Ck1-ep-fRg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="PRN-vR-ucQ" id="9BY-Nz-6eY"/>
@@ -444,7 +471,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UrY-cm-dHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4684.057971014493" y="758.96739130434787"/>
+            <point key="canvasLocation" x="4702.898550724638" y="758.96739130434787"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jk2-8y-0du">
+            <objects>
+                <viewController id="qKW-vg-sBA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aF6-Vz-iGg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WFJ-SU-OFe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CZa-Wl-RUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4703" y="1466"/>
         </scene>
         <!--Menu ItemVC-->
         <scene sceneID="tfT-Rf-hbU">
@@ -986,6 +1028,7 @@
         <image name="icons8-menu" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="cJ3-4e-CS6"/>
         <segue reference="Zrg-gA-0cI"/>
     </inferredMetricsTieBreakers>
 </document>
