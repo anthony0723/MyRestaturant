@@ -27,7 +27,7 @@ extension UIView {
                 
             {
                 self.layer.masksToBounds = false
-                self.layer.cornerRadius = 0.0
+                self.layer.cornerRadius = 0.5
                 self.layer.shadowOpacity = 0.5
                 self.layer.shadowRadius = 3.0
                 self.layer.shadowOffset = CGSize(width: 5.0, height: 4.0)

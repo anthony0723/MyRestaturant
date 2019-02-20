@@ -8,8 +8,12 @@
 
 import UIKit
 
-class RecipeVC: UIViewController {
+class RecipeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
+
+    var myRecipes = [Recipes]()
+    
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet var r_TableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +22,17 @@ class RecipeVC: UIViewController {
         menuButton.target = revealViewController()
         menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
     }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return myRecipes.count
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = r_TableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! RecipeCellVC
+        
+        
+        return cell
+    }
 
     /*
     // MARK: - Navigation
