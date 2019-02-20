@@ -190,7 +190,6 @@
 		C30ED6B221FD277C00F64C47 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C3C81B0A2200FD040045E60F /* MeterialViews.swift */,
 				C30ED68421FD267200F64C47 /* Main.storyboard */,
 				C30ED68C21FD267400F64C47 /* LaunchScreen.storyboard */,
 			);
@@ -201,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				C3C81B0E22011EBB0045E60F /* CalendarVars.swift */,
+				C3C81B0A2200FD040045E60F /* MeterialViews.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
