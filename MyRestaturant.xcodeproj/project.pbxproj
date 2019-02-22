@@ -33,6 +33,7 @@
 		C3C81B582204ECB20045E60F /* InventoryCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C81B572204ECB20045E60F /* InventoryCellVC.swift */; };
 		C3FA5B81221CA5A1008356AC /* RecipeCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FA5B80221CA5A1008356AC /* RecipeCellVC.swift */; };
 		C3FA5B83221CA5CA008356AC /* RecipeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FA5B82221CA5CA008356AC /* RecipeDetailVC.swift */; };
+		C3FA5B85222074A6008356AC /* ButtonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FA5B84222074A6008356AC /* ButtonViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		C3C81B572204ECB20045E60F /* InventoryCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCellVC.swift; sourceTree = "<group>"; };
 		C3FA5B80221CA5A1008356AC /* RecipeCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCellVC.swift; sourceTree = "<group>"; };
 		C3FA5B82221CA5CA008356AC /* RecipeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailVC.swift; sourceTree = "<group>"; };
+		C3FA5B84222074A6008356AC /* ButtonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 			children = (
 				C3C81B0E22011EBB0045E60F /* CalendarVars.swift */,
 				C3C81B0A2200FD040045E60F /* MeterialViews.swift */,
+				C3FA5B84222074A6008356AC /* ButtonViews.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				C3C81B0D22010F2C0045E60F /* CollectionCellVC.swift in Sources */,
 				C30ED6C021FFAE9B00F64C47 /* FirstVC.swift in Sources */,
 				C3C81B092200F8510045E60F /* MenuItemVC.swift in Sources */,
+				C3FA5B85222074A6008356AC /* ButtonViews.swift in Sources */,
 				C3C81B1122011F0A0045E60F /* DateCell.swift in Sources */,
 				C3C81B0F22011EBB0045E60F /* CalendarVars.swift in Sources */,
 				C30ED68921FD267200F64C47 /* MyRestaturant.xcdatamodeld in Sources */,

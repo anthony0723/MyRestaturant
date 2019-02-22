@@ -547,20 +547,143 @@
             </objects>
             <point key="canvasLocation" x="4702.898550724638" y="758.96739130434787"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="Jk2-8y-0du">
             <objects>
-                <viewController id="qKW-vg-sBA" sceneMemberID="viewController">
+                <viewController id="qKW-vg-sBA" customClass="RecipeDetailVC" customModule="MyRestaturant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aF6-Vz-iGg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="7ez-Vv-Mou">
+                                <rect key="frame" x="0.0" y="64" width="414" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGr-iJ-56m">
+                                <rect key="frame" x="20" y="64" width="374" height="28"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6d-4d-DBc">
+                                <rect key="frame" x="386" y="236" width="20" height="20"/>
+                                <state key="normal" image="icons8-settings_filled"/>
+                                <connections>
+                                    <action selector="settingsImagePressed:" destination="qKW-vg-sBA" eventType="touchUpInside" id="yV7-zj-fjc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6f-0E-Rj8" customClass="ButtonViews" customModule="MyRestaturant" customModuleProvider="target">
+                                <rect key="frame" x="7" y="690" width="400" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="merterialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="savePressed:" destination="qKW-vg-sBA" eventType="touchUpInside" id="kyq-eN-dpE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxt-ny-A3M" customClass="ButtonViews" customModule="MyRestaturant" customModuleProvider="target">
+                                <rect key="frame" x="208" y="272" width="199" height="30"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="DIRECTIONS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="merterialDesign" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="directionsPress:" destination="qKW-vg-sBA" eventType="touchUpInside" id="0m8-v5-0wI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsE-kB-uOY" customClass="ButtonViews" customModule="MyRestaturant" customModuleProvider="target">
+                                <rect key="frame" x="7" y="272" width="199" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="dXT-kA-OO7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="RECIPE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="merterialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="recipePressed:" destination="qKW-vg-sBA" eventType="touchUpInside" id="N1o-XE-jdS"/>
+                                </connections>
+                            </button>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5rN-at-SE1">
+                                <rect key="frame" x="7" y="310" width="399" height="372"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Recipe goes here!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EFl-Vs-qh8">
+                                <rect key="frame" x="7" y="310" width="399" height="372"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="merterialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WFJ-SU-OFe" firstAttribute="bottom" secondItem="P6f-0E-Rj8" secondAttribute="bottom" constant="6" id="0zQ-vK-jKM"/>
+                            <constraint firstItem="WFJ-SU-OFe" firstAttribute="trailing" secondItem="EFl-Vs-qh8" secondAttribute="trailing" constant="8" id="2u1-1A-TQH"/>
+                            <constraint firstItem="WFJ-SU-OFe" firstAttribute="trailing" secondItem="5rN-at-SE1" secondAttribute="trailing" constant="8" id="3HS-kH-uLy"/>
+                            <constraint firstItem="W6d-4d-DBc" firstAttribute="top" secondItem="RGr-iJ-56m" secondAttribute="bottom" constant="144" id="3Wj-UT-bDM"/>
+                            <constraint firstItem="RsE-kB-uOY" firstAttribute="leading" secondItem="WFJ-SU-OFe" secondAttribute="leading" constant="7" id="5lr-SW-7lS"/>
+                            <constraint firstItem="P6f-0E-Rj8" firstAttribute="top" secondItem="7ez-Vv-Mou" secondAttribute="bottom" constant="426" id="5oc-XL-MgB"/>
+                            <constraint firstItem="EFl-Vs-qh8" firstAttribute="top" secondItem="vxt-ny-A3M" secondAttribute="bottom" constant="8" id="AKN-d3-tId"/>
+                            <constraint firstItem="WFJ-SU-OFe" firstAttribute="trailing" secondItem="RGr-iJ-56m" secondAttribute="trailing" constant="20" id="AZd-yO-BTu"/>
+                            <constraint firstItem="5rN-at-SE1" firstAttribute="top" secondItem="vxt-ny-A3M" secondAttribute="bottom" constant="8" id="Ai6-9a-Z47"/>
+                            <constraint firstItem="P6f-0E-Rj8" firstAttribute="top" secondItem="vxt-ny-A3M" secondAttribute="bottom" constant="388" id="BFK-Tv-yY7"/>
+                            <constraint firstItem="P6f-0E-Rj8" firstAttribute="top" secondItem="5rN-at-SE1" secondAttribute="bottom" constant="8" id="BwD-bM-NLh"/>
+                            <constraint firstItem="vxt-ny-A3M" firstAttribute="leading" secondItem="RsE-kB-uOY" secondAttribute="trailing" constant="2" id="D7c-27-iQG"/>
+                            <constraint firstItem="vxt-ny-A3M" firstAttribute="top" secondItem="7ez-Vv-Mou" secondAttribute="bottom" constant="8" id="DLB-e8-wvp"/>
+                            <constraint firstItem="P6f-0E-Rj8" firstAttribute="top" secondItem="EFl-Vs-qh8" secondAttribute="bottom" constant="8" id="ECJ-pW-NT2"/>
+                            <constraint firstItem="5rN-at-SE1" firstAttribute="leading" secondItem="WFJ-SU-OFe" secondAttribute="leading" constant="7" id="EUs-9Q-1x1"/>
+                            <constraint firstItem="WFJ-SU-OFe" firstAttribute="trailing" secondItem="W6d-4d-DBc" secondAttribute="trailing" constant="8" id="KmT-Ke-2pg"/>
+                            <constraint firstItem="WFJ-SU-OFe" firstAttribute="trailing" secondItem="P6f-0E-Rj8" secondAttribute="trailing" constant="7" id="MWa-RP-yzQ"/>
+                            <constraint firstItem="RGr-iJ-56m" firstAttribute="top" secondItem="WFJ-SU-OFe" secondAttribute="top" id="MgW-wx-ge1"/>
+                            <constraint firstItem="WFJ-SU-OFe" firstAttribute="bottom" secondItem="RGr-iJ-56m" secondAttribute="bottom" constant="644" id="OvA-WM-KFb"/>
+                            <constraint firstItem="P6f-0E-Rj8" firstAttribute="top" secondItem="RsE-kB-uOY" secondAttribute="bottom" constant="388" id="PbV-NR-tVS"/>
+                            <constraint firstItem="RsE-kB-uOY" firstAttribute="top" secondItem="7ez-Vv-Mou" secondAttribute="bottom" constant="8" id="UbL-ak-rkR"/>
+                            <constraint firstItem="WFJ-SU-OFe" firstAttribute="bottom" secondItem="W6d-4d-DBc" secondAttribute="bottom" constant="480" id="UmC-xp-hY8"/>
+                            <constraint firstItem="7ez-Vv-Mou" firstAttribute="top" secondItem="WFJ-SU-OFe" secondAttribute="top" id="hDu-Gc-bff"/>
+                            <constraint firstItem="vxt-ny-A3M" firstAttribute="trailing" secondItem="WFJ-SU-OFe" secondAttribute="trailing" constant="-7" id="hjf-8e-3dz"/>
+                            <constraint firstItem="7ez-Vv-Mou" firstAttribute="trailing" secondItem="WFJ-SU-OFe" secondAttribute="trailing" id="k9e-4I-9cB"/>
+                            <constraint firstItem="7ez-Vv-Mou" firstAttribute="leading" secondItem="WFJ-SU-OFe" secondAttribute="leading" id="nhr-Cw-WHX"/>
+                            <constraint firstItem="P6f-0E-Rj8" firstAttribute="leading" secondItem="WFJ-SU-OFe" secondAttribute="leading" constant="7" id="qTe-UF-8PI"/>
+                            <constraint firstItem="WFJ-SU-OFe" firstAttribute="bottom" secondItem="7ez-Vv-Mou" secondAttribute="bottom" constant="472" id="qub-Kg-0lc"/>
+                            <constraint firstItem="W6d-4d-DBc" firstAttribute="leading" secondItem="WFJ-SU-OFe" secondAttribute="leading" constant="386" id="rhh-Q9-jAQ"/>
+                            <constraint firstItem="RGr-iJ-56m" firstAttribute="leading" secondItem="WFJ-SU-OFe" secondAttribute="leading" constant="20" id="uaU-Iu-Rqm"/>
+                            <constraint firstItem="EFl-Vs-qh8" firstAttribute="leading" secondItem="WFJ-SU-OFe" secondAttribute="leading" constant="7" id="xSb-1a-d6x"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WFJ-SU-OFe"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="hrG-vT-1zh"/>
+                    <connections>
+                        <outlet property="directionsButton" destination="vxt-ny-A3M" id="I5p-SP-byS"/>
+                        <outlet property="directionsTextField" destination="5rN-at-SE1" id="cRB-Uu-S1g"/>
+                        <outlet property="recipeButton" destination="RsE-kB-uOY" id="PCZ-PE-BC4"/>
+                        <outlet property="recipeLabel" destination="RGr-iJ-56m" id="rEG-kv-ss7"/>
+                        <outlet property="recipeTextField" destination="EFl-Vs-qh8" id="ZYH-gy-FEA"/>
+                        <outlet property="saveButton" destination="P6f-0E-Rj8" id="Wa3-Tn-0LO"/>
+                        <outlet property="setImage" destination="7ez-Vv-Mou" id="qFn-Ez-gid"/>
+                        <outlet property="settingsImageButton" destination="W6d-4d-DBc" id="mnG-hg-yFp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZa-Wl-RUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4703" y="1466"/>
+            <point key="canvasLocation" x="4702.898550724638" y="1453.5326086956522"/>
         </scene>
         <!--Menu ItemVC-->
         <scene sceneID="tfT-Rf-hbU">
@@ -1100,6 +1223,8 @@
         <image name="dr" width="1000" height="800"/>
         <image name="drblur" width="1000" height="800"/>
         <image name="icons8-menu" width="32" height="32"/>
+        <image name="icons8-settings_filled" width="32" height="32"/>
+        <image name="photo" width="940" height="620"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="cJ3-4e-CS6"/>
