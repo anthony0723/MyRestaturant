@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 class RecipeDetailVC: UIViewController {
+    
+    var item: Recipes? = nil
+    
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     @IBOutlet weak var recipeLabel: UILabel!
     
     @IBOutlet weak var setImage: UIImageView!

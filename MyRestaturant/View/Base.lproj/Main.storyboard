@@ -541,6 +541,7 @@
                     <connections>
                         <outlet property="menuButton" destination="PRN-vR-ucQ" id="9BY-Nz-6eY"/>
                         <outlet property="r_TableView" destination="sgP-6k-Tgw" id="VUG-UW-xi3"/>
+                        <outlet property="searchBar" destination="sgP-6k-Tgw" id="vC6-Wi-zfW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UrY-cm-dHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
